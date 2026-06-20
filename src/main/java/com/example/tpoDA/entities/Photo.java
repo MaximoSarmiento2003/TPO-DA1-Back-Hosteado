@@ -24,6 +24,6 @@ public class Photo {
 
     //Imagen
     @Lob
-    @Column(name = "foto", nullable = false,columnDefinition = "LONGBLOB")
+    @Column(name = "foto", nullable = false)
     private byte[] image;
 }
