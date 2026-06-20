@@ -1,0 +1,11 @@
+package com.example.tpoDA.repositories;
+
+import com.example.tpoDA.entities.Country;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface CountryRepository extends JpaRepository<Country, Integer> {
+
+    Optional<Country> findByNameIgnoreCase(String name);
+}
