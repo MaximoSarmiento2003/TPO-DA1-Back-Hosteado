@@ -13,6 +13,7 @@ public class JoinAuctionResponseDTO {
     private BigDecimal currentBid;       // mejor oferta actual (null si no hay)
     private Integer bidderNumber;        // número de postor asignado
     private boolean canBid;             // tiene medio de pago verificado y sin multas
+    private BigDecimal chequeDisponible; // si paga con cheque: monto aún disponible (null si no aplica)
     private String  streamingLink;       // link del streaming
     private String  currency;            // "ARS" | "USD"
 }

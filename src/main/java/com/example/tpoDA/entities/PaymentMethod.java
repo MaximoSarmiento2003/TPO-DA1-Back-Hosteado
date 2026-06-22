@@ -50,6 +50,12 @@ public class PaymentMethod {
     @Column(name = "monto_garantizado", precision = 18, scale = 2)
     private BigDecimal montoGarantizado;
 
+    // Cuánto del monto garantizado ya está comprometido en ofertas/compras vigentes.
+    // Solo se usa cuando tipo = CHEQUE_CERTIFICADO.
+    @Column(name = "monto_comprometido", precision = 18, scale = 2)
+    @Builder.Default
+    private BigDecimal montoComprometido = BigDecimal.ZERO;
+
     @Column(name = "moneda", length = 5)
     private String moneda;
 
