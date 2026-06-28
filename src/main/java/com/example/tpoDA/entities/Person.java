@@ -31,6 +31,6 @@ public class Person {
     private PersonStatus status;
 
     @Lob
-    @Column(name = "foto")
+    @Column(name = "foto",columnDefinition = "LONGBLOB")
     private byte[] photo;
 }

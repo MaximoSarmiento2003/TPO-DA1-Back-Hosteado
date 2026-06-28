@@ -21,10 +21,10 @@ public class DniPhoto {
     private Integer personId;
 
     @Lob
-    @Column(name = "foto_frente")
+    @Column(name = "foto_frente",columnDefinition = "LONGBLOB")
     private byte[] frente;
 
     @Lob
-    @Column(name = "foto_dorso")
+    @Column(name = "foto_dorso",columnDefinition = "LONGBLOB")
     private byte[] dorso;
 }
